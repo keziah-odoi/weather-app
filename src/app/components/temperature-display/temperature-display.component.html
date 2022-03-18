@@ -1,0 +1,42 @@
+<main>
+    <div [className]="'card-1'">
+<div [className] = "'main-body'">
+    <div
+    [className] = "'weather-today'"><h3>Accra, Ghana 
+    </h3>
+    <br>
+    <p>We have {{weather}} today!</p>
+</div>
+
+   
+    <div [className] = "'toggle'" >
+    <label>Temperature in: </label>
+    <select  [(ngModel)] = "display" (change)="toggleUnit()">
+        <option *ngFor="let display of units"
+        [ngValue]="display">{{display}}</option>
+    </select>
+</div>
+
+
+<div>
+<h1 [className]="'temperature-display'"> {{temperature}} {{displayUnit}}</h1>
+</div>
+<div>
+    <p [className]="'feels-like'"> Feels like {{feelsLikeDegrees}} {{displayUnit}}</p>
+    </div>
+</div>
+</div>
+
+<div [className]="'weather-details'">
+     <div>Humidity</div>
+        <div>{{humidity}}</div>
+        <div>Pressure</div>
+        <div>{{pressure}}</div>
+        <div>Wind Speed</div>
+        <div>{{windSpeed}}</div>
+
+
+
+    </div>
+
+</main>

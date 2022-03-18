@@ -1,0 +1,9 @@
+<nav [className] = "'nav'">
+    <ul [className]="'nav-list'">
+        <li [className]="'nav-list-item'"><a routerLink=""><fa-icon [icon]="faHouseChimney"></fa-icon> Home</a></li>
+        <li [className]="'nav-list-item'"> <a routerLink="about"><fa-icon [icon]="faCircleInfo"></fa-icon>About</a></li>
+        <li [className]="'nav-list-item'"><a routerLink="contact"><fa-icon [icon]="faMessage"></fa-icon>Contact</a></li>
+    </ul>
+   </nav>
+
+   <router-outlet></router-outlet>

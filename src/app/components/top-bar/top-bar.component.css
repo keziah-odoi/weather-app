@@ -1,0 +1,7 @@
+img {
+  max-width: 27vw;
+  max-height: 11vh;
+  object-fit: fill;
+  padding-left: 5px;
+  padding-top: 5px;
+}
